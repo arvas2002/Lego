@@ -57,6 +57,9 @@ public class LegoSetRepository extends Repository<LegoSet> {
                 forEach(System.out::println);
         return new char[0];
     }
+    /**
+     * Prints out the average length of the LegoSet names
+     */
     public double printAvgLengthOfLegoSetName(){
         return getAll().stream().
                 map(LegoSet::getName).
